@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.ss.gameforkids">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".MenuGame"/>
+        <activity android:name=".PuzzleGame"/>
+        <activity android:name=".ListPuzzle"/>
+        <activity android:name=".PuzzleAnimal1"/>
+        <activity android:name=".PuzzleAnimal2"/>
+        <activity android:name=".PuzzleAnimal3"/>
+        <activity android:name=".PuzzleAnimal4"/>
+        <activity android:name=".PuzzleBathroom1"/>
+        <activity android:name=".PuzzleBathroom2"/>
+        <activity android:name=".PuzzleBathroom3"/>
+        <activity android:name=".PuzzleBathroom4"/>
+        <activity android:name=".PuzzleBathroom5"/>
+        <activity android:name=".PuzzleAnimal5"/>
+        <activity android:name=".PuzzleAnimalFinal"/>
+        <activity android:name=".PuzzleAnimal10"/>
+        <activity android:name=".PuzzleAnimal6"/>
+        <activity android:name=".PuzzleAnimal7"/>
+        <activity android:name=".PuzzleAnimal8"/>
+        <activity android:name=".PuzzleAnimal9"/>
+        <activity android:name=".PuzzleColor1"/>
+        <activity android:name=".PuzzleColor2">
+        </activity>
+        <activity android:name=".PuzzleColor3">
+        </activity>
+        <activity android:name=".PuzzleColor4">
+        </activity>
+        <activity android:name=".PuzzleColor5">
+        </activity>
+        <activity android:name=".PuzzleColor6">
+        </activity>
+        <activity android:name=".PuzzleColor7">
+        </activity>
+        <activity android:name=".PuzzleColor8">
+        </activity>
+        <activity android:name=".PuzzleColor9">
+        </activity>
+        <activity android:name=".PuzzleColor10">
+        </activity>
+        <activity android:name=".PuzzleFood1">
+        </activity>
+        <activity android:name=".PuzzleBody1">
+        </activity>
+    </application>
+
+</manifest>

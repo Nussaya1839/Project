@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgg"
+    tools:context="com.example.ss.gameforkids.PuzzleAnimal1">
+
+    <RelativeLayout
+        android:layout_width="322dp"
+        android:layout_height="482dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <ImageView
+            android:id="@+id/imgBear"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/bear" />
+
+        <ImageView
+            android:id="@+id/imv1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="45dp"
+            app:srcCompat="@drawable/box" />
+
+        <ImageView
+            android:id="@+id/imv2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/box"
+            android:layout_alignTop="@+id/imv1"
+            android:layout_alignLeft="@+id/imgBear"
+            android:layout_alignStart="@+id/imgBear" />
+
+        <ImageView
+            android:id="@+id/imv3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/box"
+            android:layout_alignTop="@+id/imv4"
+            android:layout_toRightOf="@+id/imv2"
+            android:layout_toEndOf="@+id/imv2" />
+
+        <ImageView
+            android:id="@+id/imv4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/imv2"
+            app:srcCompat="@drawable/box" />
+
+        <ImageView
+            android:id="@+id/imA"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/imgBear"
+            android:layout_toLeftOf="@+id/imgBear"
+            android:layout_toStartOf="@+id/imgBear"
+            app:srcCompat="@drawable/a" />
+
+        <ImageView
+            android:id="@+id/imE"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/e"
+            android:layout_below="@+id/imgBear"
+            android:layout_toRightOf="@+id/imgBear"
+            android:layout_toEndOf="@+id/imgBear" />
+
+        <ImageView
+            android:id="@+id/imO"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/o"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/imA"
+            android:layout_alignStart="@+id/imA" />
+
+        <ImageView
+            android:id="@+id/imR"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/r"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/imE"
+            android:layout_alignStart="@+id/imE" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="B"
+            android:textSize="30sp"
+            android:textColor="@android:color/black"
+            tools:layout_editor_absoluteX="39dp"
+            tools:layout_editor_absoluteY="66dp"
+            android:layout_alignBaseline="@+id/textView2"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_toLeftOf="@+id/imv2"
+            android:layout_toStartOf="@+id/imv2" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="E"
+            android:textSize="30sp"
+            android:textColor="@android:color/black"
+            tools:layout_editor_absoluteX="137dp"
+            tools:layout_editor_absoluteY="66dp"
+            android:layout_alignBaseline="@+id/textView4"
+            android:layout_alignBottom="@+id/textView4"
+            android:layout_alignRight="@+id/imv2"
+            android:layout_alignEnd="@+id/imv2" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/imv4"
+            android:layout_marginTop="12dp"
+            android:text="R"
+            android:textSize="30sp"
+            android:textColor="@android:color/black"
+            tools:layout_editor_absoluteX="500dp"
+            tools:layout_editor_absoluteY="66dp" />
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

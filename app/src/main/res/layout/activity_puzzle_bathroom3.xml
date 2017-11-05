@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgg"
+    tools:context="com.example.ss.gameforkids.PuzzleBathroom3">
+
+    <RelativeLayout
+        android:layout_width="322dp"
+        android:layout_height="482dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <ImageView
+            android:id="@+id/imgTowel"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/towel" />
+
+        <ImageView
+            android:id="@+id/imv1"
+            android:layout_width="65dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="45dp"
+            app:srcCompat="@drawable/box"
+            android:layout_above="@+id/imgTowel"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:id="@+id/imv2"
+            android:layout_width="65dp"
+            android:layout_height="70dp"
+            android:layout_alignTop="@+id/imv1"
+            android:layout_toEndOf="@+id/imv1"
+            android:layout_toRightOf="@+id/imv1"
+            app:srcCompat="@drawable/box" />
+
+        <ImageView
+            android:id="@+id/imv3"
+            android:layout_width="65dp"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/box"
+            android:layout_alignTop="@+id/imv2"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/imv4"
+            android:layout_width="65dp"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/box"
+            android:layout_alignTop="@+id/imv3"
+            android:layout_toRightOf="@+id/imv3"
+            android:layout_toEndOf="@+id/imv3" />
+
+        <ImageView
+            android:id="@+id/imv5"
+            android:layout_width="65dp"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/box"
+            android:layout_alignTop="@+id/imv4"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="T"
+            android:textColor="@android:color/black"
+            android:textSize="28sp"
+            android:layout_alignTop="@+id/imv1"
+            android:layout_toLeftOf="@+id/imv2"
+            android:layout_toStartOf="@+id/imv2"
+            android:layout_marginTop="14dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="O"
+            android:textColor="@android:color/black"
+            android:textSize="28sp"
+            android:layout_alignBaseline="@+id/textView"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_alignLeft="@+id/imgTowel"
+            android:layout_alignStart="@+id/imgTowel" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="E"
+            android:textColor="@android:color/black"
+            android:textSize="28sp"
+            android:layout_alignBaseline="@+id/textView2"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_toLeftOf="@+id/imv5"
+            android:layout_toStartOf="@+id/imv5" />
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="L"
+            android:textSize="28sp"
+            android:textColor="@android:color/black"
+            android:layout_alignBaseline="@+id/textView4"
+            android:layout_alignBottom="@+id/textView4"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:id="@+id/imF"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignLeft="@+id/textView"
+            android:layout_alignStart="@+id/textView"
+            android:layout_below="@+id/imgTowel"
+            app:srcCompat="@drawable/f" />
+
+        <ImageView
+            android:id="@+id/imW"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignLeft="@+id/textView4"
+            android:layout_alignStart="@+id/textView4"
+            android:layout_below="@+id/imgTowel"
+            app:srcCompat="@drawable/w" />
+
+        <ImageView
+            android:id="@+id/imV"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignLeft="@+id/imF"
+            android:layout_alignStart="@+id/imF"
+            android:layout_below="@+id/imF"
+            app:srcCompat="@drawable/v" />
+
+        <ImageView
+            android:id="@+id/imC"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignLeft="@+id/imW"
+            android:layout_alignStart="@+id/imW"
+            android:layout_below="@+id/imW"
+            app:srcCompat="@drawable/c" />
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

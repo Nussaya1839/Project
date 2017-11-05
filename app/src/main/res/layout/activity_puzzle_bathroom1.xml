@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgg"
+    tools:context="com.example.ss.gameforkids.PuzzleBathroom1">
+
+    <RelativeLayout
+        android:layout_width="322dp"
+        android:layout_height="482dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageView
+            android:id="@+id/imgSink"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/sink" />
+
+        <ImageView
+            android:id="@+id/imv1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/box"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:id="@+id/imv2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/box"
+            android:layout_alignTop="@+id/imv1"
+            android:layout_alignLeft="@+id/imgSink"
+            android:layout_alignStart="@+id/imgSink" />
+
+        <ImageView
+            android:id="@+id/imv3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/box"
+            android:layout_alignTop="@+id/imv4"
+            android:layout_toRightOf="@+id/imv2"
+            android:layout_toEndOf="@+id/imv2" />
+
+        <ImageView
+            android:id="@+id/imv4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/imv2"
+            app:srcCompat="@drawable/box" />
+
+        <ImageView
+            android:id="@+id/imM"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/m"
+            android:layout_below="@+id/imgSink"
+            android:layout_alignLeft="@+id/textView"
+            android:layout_alignStart="@+id/textView" />
+
+        <ImageView
+            android:id="@+id/imS"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/s"
+            android:layout_below="@+id/imgSink"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="22dp"
+            android:layout_marginEnd="22dp" />
+
+        <ImageView
+            android:id="@+id/imN"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/n"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/imM"
+            android:layout_alignStart="@+id/imM" />
+
+        <ImageView
+            android:id="@+id/imG"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/g"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/imS"
+            android:layout_alignStart="@+id/imS" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="S"
+            android:textSize="30sp"
+            android:textColor="@android:color/black"
+            tools:layout_editor_absoluteX="39dp"
+            tools:layout_editor_absoluteY="66dp"
+            android:layout_alignBaseline="@+id/textView2"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_alignRight="@+id/imv1"
+            android:layout_alignEnd="@+id/imv1" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="I"
+            android:textSize="30sp"
+            android:textColor="@android:color/black"
+            tools:layout_editor_absoluteX="137dp"
+            tools:layout_editor_absoluteY="66dp"
+            android:layout_alignBaseline="@+id/textView4"
+            android:layout_alignBottom="@+id/textView4"
+            android:layout_alignRight="@+id/imv2"
+            android:layout_alignEnd="@+id/imv2" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/imv4"
+            android:layout_marginTop="12dp"
+            android:text="K"
+            android:textSize="30sp"
+            android:textColor="@android:color/black"
+            tools:layout_editor_absoluteX="500dp"
+            tools:layout_editor_absoluteY="66dp" />
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
