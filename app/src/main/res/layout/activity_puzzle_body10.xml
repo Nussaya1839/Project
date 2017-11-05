@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgg"
+    tools:context="com.example.ss.gameforkids.PuzzleBody10">
+
+    <RelativeLayout
+        android:layout_width="322dp"
+        android:layout_height="482dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <ImageView
+            android:id="@+id/imgKnee"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            app:srcCompat="@drawable/knee"
+            android:layout_below="@+id/imv1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="28dp"/>
+
+        <ImageView
+            android:id="@+id/imv1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/box"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/imv2"
+            android:layout_toStartOf="@+id/imv2"
+            android:layout_marginTop="23dp"/>
+
+        <ImageView
+            android:id="@+id/imv2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/box"
+            android:layout_alignTop="@+id/imv1"
+            android:layout_toLeftOf="@+id/imv3"
+            android:layout_toStartOf="@+id/imv3"/>
+
+        <ImageView
+            android:id="@+id/imv3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/box"
+            android:layout_alignTop="@+id/imv4"
+            android:layout_toLeftOf="@+id/imv4"
+            android:layout_toStartOf="@+id/imv4"/>
+
+        <ImageView
+            android:id="@+id/imv4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/imv2"
+            app:srcCompat="@drawable/box" />
+
+        <ImageView
+            android:id="@+id/imA"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/a"
+            android:layout_below="@+id/imgKnee"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+        <ImageView
+            android:id="@+id/imU"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/u"
+            android:layout_below="@+id/imgKnee"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+        <ImageView
+            android:id="@+id/imW"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/w"
+            android:layout_below="@+id/imA"
+            android:layout_alignLeft="@+id/imv1"
+            android:layout_alignStart="@+id/imv1"/>
+
+        <ImageView
+            android:id="@+id/imK"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/k"
+            android:layout_below="@+id/imU"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="N"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:layout_above="@+id/imgKnee"
+            android:layout_toLeftOf="@+id/imv3"
+            android:layout_toStartOf="@+id/imv3"
+            android:layout_marginBottom="14dp"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="E"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:layout_alignBaseline="@+id/textView4"
+            android:layout_alignBottom="@+id/textView4"
+            android:layout_toLeftOf="@+id/imv4"
+            android:layout_toStartOf="@+id/imv4"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="E"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:layout_alignBaseline="@+id/textView2"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

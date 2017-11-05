@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bgg"
-    tools:context="com.example.ss.gameforkids.PuzzleBody1">
+    tools:context="com.example.ss.gameforkids.PuzzleBody2">
 
     <RelativeLayout
         android:layout_width="368dp"
@@ -20,12 +20,12 @@
         android:layout_marginTop="8dp">
 
         <ImageView
-            android:id="@+id/imgArm"
+            android:id="@+id/imgEar"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            app:srcCompat="@drawable/arm" />
+            app:srcCompat="@drawable/ear" />
 
         <ImageView
             android:id="@+id/imv1"
@@ -33,8 +33,8 @@
             android:layout_height="80dp"
             app:srcCompat="@drawable/box"
             android:layout_alignParentTop="true"
-            android:layout_toLeftOf="@+id/imgArm"
-            android:layout_toStartOf="@+id/imgArm"/>
+            android:layout_toLeftOf="@+id/imgEar"
+            android:layout_toStartOf="@+id/imgEar"/>
 
         <ImageView
             android:id="@+id/imv2"
@@ -51,8 +51,8 @@
             android:layout_height="80dp"
             app:srcCompat="@drawable/box"
             android:layout_alignParentTop="true"
-            android:layout_toRightOf="@+id/imgArm"
-            android:layout_toEndOf="@+id/imgArm"/>
+            android:layout_toRightOf="@+id/imgEar"
+            android:layout_toEndOf="@+id/imgEar"/>
 
 
         <ImageView
@@ -60,58 +60,58 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             app:srcCompat="@drawable/a"
-            android:layout_below="@+id/imgArm"
-            android:layout_toLeftOf="@+id/imgArm"
-            android:layout_toStartOf="@+id/imgArm"/>
+            android:layout_below="@+id/imgEar"
+            android:layout_toLeftOf="@+id/imgEar"
+            android:layout_toStartOf="@+id/imgEar"/>
+
+        <ImageView
+            android:id="@+id/imY"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:srcCompat="@drawable/y"
+            android:layout_below="@+id/imgEar"
+            android:layout_toRightOf="@+id/imgEar"
+            android:layout_toEndOf="@+id/imgEar"/>
 
         <ImageView
             android:id="@+id/imE"
             android:layout_width="80dp"
             android:layout_height="80dp"
             app:srcCompat="@drawable/e"
-            android:layout_below="@+id/imgArm"
-            android:layout_toRightOf="@+id/imgArm"
-            android:layout_toEndOf="@+id/imgArm"/>
-
-        <ImageView
-            android:id="@+id/imO"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            app:srcCompat="@drawable/o"
             android:layout_alignParentBottom="true"
             android:layout_alignLeft="@+id/imA"
             android:layout_alignStart="@+id/imA"/>
 
         <ImageView
-            android:id="@+id/imR"
+            android:id="@+id/imI"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:layout_alignLeft="@+id/imE"
+            app:srcCompat="@drawable/i"
             android:layout_alignParentBottom="true"
-            android:layout_alignStart="@+id/imE"
-            app:srcCompat="@drawable/r" />
+            android:layout_alignLeft="@+id/imY"
+            android:layout_alignStart="@+id/imY"/>
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/textView"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:text="R"
+            android:text="E"
             android:textSize="30sp"
             android:textColor="@android:color/black"
             android:layout_marginTop="13dp"
             android:layout_alignParentTop="true"
-            android:layout_alignRight="@+id/imv2"
-            android:layout_alignEnd="@+id/imv2"/>
+            android:layout_alignRight="@+id/imv1"
+            android:layout_alignEnd="@+id/imv1"/>
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:text="M"
+            android:text="R"
             android:textSize="30sp"
             android:textColor="@android:color/black"
-            android:layout_alignBaseline="@+id/textView2"
-            android:layout_alignBottom="@+id/textView2"
+            android:layout_alignBaseline="@+id/textView"
+            android:layout_alignBottom="@+id/textView"
             android:layout_alignRight="@+id/imv3"
             android:layout_alignEnd="@+id/imv3"/>
 

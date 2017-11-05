@@ -58,6 +58,24 @@
         </activity>
         <activity android:name=".PuzzleBody1">
         </activity>
+        <activity android:name=".PuzzleBody2">
+        </activity>
+        <activity android:name=".PuzzleBody3">
+        </activity>
+        <activity android:name=".PuzzleBody4">
+        </activity>
+        <activity android:name=".PuzzleBody5">
+        </activity>
+        <activity android:name=".PuzzleBody6">
+        </activity>
+        <activity android:name=".PuzzleBody7">
+        </activity>
+        <activity android:name=".PuzzleBody8">
+        </activity>
+        <activity android:name=".PuzzleBody9">
+        </activity>
+        <activity android:name=".PuzzleBody10">
+        </activity>
     </application>
 
 </manifest>
