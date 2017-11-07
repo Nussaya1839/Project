@@ -76,6 +76,10 @@
         </activity>
         <activity android:name=".PuzzleBody10">
         </activity>
+        <activity android:name=".PuzzleColorFinal">
+        </activity>
+        <activity android:name=".PuzzleBodyFinal">
+        </activity>
     </application>
 
 </manifest>

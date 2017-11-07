@@ -19,13 +19,15 @@ public class PuzzleBody8 extends AppCompatActivity {
     ImageView imG, imD, imJ, imT;
     private String msg = "debug";
     private int score = 0;
-    private String strscore;
+    private String strscore, strReceiveScore;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_puzzle_body8);
 
+        strReceiveScore = getIntent().getStringExtra("score");
+        score = Integer.parseInt(strReceiveScore);
         imG= (ImageView) findViewById(R.id.imG);
         imD= (ImageView) findViewById(R.id.imD);
         imJ= (ImageView) findViewById(R.id.imJ);

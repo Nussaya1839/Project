@@ -19,13 +19,15 @@ public class PuzzleColor4 extends AppCompatActivity {
     ImageView imE, imA, imO, imU;
     private String msg = "debug";
     private int score = 0;
-    private String strscore;
+    private String strscore, strReceiveScore;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_puzzle_color4);
 
+        strReceiveScore = getIntent().getStringExtra("score");
+        score = Integer.parseInt(strReceiveScore);
         imE= (ImageView) findViewById(R.id.imE);
         imA= (ImageView) findViewById(R.id.imA);
         imO= (ImageView) findViewById(R.id.imO);

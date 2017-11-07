@@ -19,13 +19,15 @@ public class PuzzleBody10 extends AppCompatActivity {
     ImageView imA, imU, imW, imK;
     private String msg = "debug";
     private int score = 0;
-    private String strscore;
+    private String strscore, strReceiveScore;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_puzzle_body10);
 
+        strReceiveScore = getIntent().getStringExtra("score");
+        score = Integer.parseInt(strReceiveScore);
         imA= (ImageView) findViewById(R.id.imA);
         imU= (ImageView) findViewById(R.id.imU);
         imW= (ImageView) findViewById(R.id.imW);
@@ -203,7 +205,7 @@ public class PuzzleBody10 extends AppCompatActivity {
         myhandler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent nextquest = new Intent(getApplicationContext(), PuzzleAnimalFinal.class);
+                Intent nextquest = new Intent(getApplicationContext(), PuzzleBodyFinal.class);
                 strscore = Integer.toString(score);
                 nextquest.putExtra("score", strscore);
                 startActivity(nextquest);

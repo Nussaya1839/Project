@@ -19,13 +19,15 @@ public class PuzzleColor3 extends AppCompatActivity {
     ImageView imJ, imA, imI, imL;
     private String msg = "debug";
     private int score = 0;
-    private String strscore;
+    private String strscore, strReceiveScore;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_puzzle_color3);
 
+        strReceiveScore = getIntent().getStringExtra("score");
+        score = Integer.parseInt(strReceiveScore);
         imJ= (ImageView) findViewById(R.id.imJ);
         imA= (ImageView) findViewById(R.id.imA);
         imI= (ImageView) findViewById(R.id.imI);

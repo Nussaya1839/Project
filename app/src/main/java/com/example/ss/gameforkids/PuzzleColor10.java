@@ -208,7 +208,7 @@ public class PuzzleColor10 extends AppCompatActivity {
         myhandler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent nextquest = new Intent(getApplicationContext(), PuzzleAnimalFinal.class);
+                Intent nextquest = new Intent(getApplicationContext(), PuzzleColorFinal.class);
                 strscore = Integer.toString(score);
                 nextquest.putExtra("score", strscore);
                 startActivity(nextquest);
