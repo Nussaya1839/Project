@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.graphics.drawable.AnimationDrawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -19,7 +21,6 @@ public class PuzzleColorFinal extends AppCompatActivity {
     private String strscore, strReceiveScore;
     private TextView tvScore;
     private Button btn1, btn2;
-    private ImageView pika;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,9 +50,5 @@ public class PuzzleColorFinal extends AppCompatActivity {
                 startActivity(intents);
             }
         });
-
-        pika = (ImageView) findViewById(R.id.pika);
-        Animation animation = AnimationUtils.loadAnimation(this, R.anim.animation);
-        pika.startAnimation(animation);
     }
 }

@@ -211,7 +211,7 @@ public class PuzzleBody2 extends AppCompatActivity {
                 startActivity(nextquest);
 
             }
-        }, 2000);
+        }, 1000);
     }
 
     public void onBackPressed() {

@@ -102,7 +102,6 @@ public class PuzzleAnimal1 extends AppCompatActivity {
                             imA.setX(gx);
                             imA.setY(gy);
                             delay();
-
                         }
                         if (itemId == R.id.imE) {
                             Toast.makeText(getApplicationContext(), "ผิด", Toast.LENGTH_LONG).show();
@@ -210,7 +209,7 @@ public class PuzzleAnimal1 extends AppCompatActivity {
                 startActivity(nextquest);
 
             }
-        }, 2000);
+        }, 1000);
     }
 
     public void onBackPressed() {

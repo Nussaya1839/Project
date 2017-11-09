@@ -23,11 +23,6 @@
         <activity android:name=".PuzzleAnimal2"/>
         <activity android:name=".PuzzleAnimal3"/>
         <activity android:name=".PuzzleAnimal4"/>
-        <activity android:name=".PuzzleBathroom1"/>
-        <activity android:name=".PuzzleBathroom2"/>
-        <activity android:name=".PuzzleBathroom3"/>
-        <activity android:name=".PuzzleBathroom4"/>
-        <activity android:name=".PuzzleBathroom5"/>
         <activity android:name=".PuzzleAnimal5"/>
         <activity android:name=".PuzzleAnimalFinal"/>
         <activity android:name=".PuzzleAnimal10"/>

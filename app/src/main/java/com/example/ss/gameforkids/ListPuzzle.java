@@ -24,7 +24,9 @@ import java.util.ListIterator;
 public class ListPuzzle extends AppCompatActivity {
 
     ListView list_puzzle;
-    String[] st_category ={"Colors", "Animals", "My Body", "Food"};
+    String[] st_category ={"Colors (สีต่าง ๆ)", "Animals (สัตว์)", "My Body (ร่างกาย)", "Food (อาหาร)",
+            "Internal Organs (อวัยวะภายใน)", "Kitchen (ห้องครัว)", "Minerals and Metals (แร่และโลหะ)",
+            "Natural (ธรรมชาติ)", "Tool Supplies (เครื่องมือช่าง)"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
