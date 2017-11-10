@@ -101,7 +101,7 @@
             android:layout_alignParentEnd="true"/>
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/textView1"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:text="G"
@@ -123,8 +123,8 @@
             android:textColor="@android:color/black"
             tools:layout_editor_absoluteX="137dp"
             tools:layout_editor_absoluteY="66dp"
-            android:layout_alignBaseline="@+id/textView"
-            android:layout_alignBottom="@+id/textView"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_alignBottom="@+id/textView1"
             android:layout_toLeftOf="@+id/imv3"
             android:layout_toStartOf="@+id/imv3"/>
 

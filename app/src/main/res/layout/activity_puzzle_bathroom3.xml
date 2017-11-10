@@ -70,7 +70,7 @@
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true" />
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/textView1"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:text="T"
@@ -88,8 +88,8 @@
             android:text="O"
             android:textColor="@android:color/black"
             android:textSize="28sp"
-            android:layout_alignBaseline="@+id/textView"
-            android:layout_alignBottom="@+id/textView"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_alignBottom="@+id/textView1"
             android:layout_alignLeft="@+id/imgTowel"
             android:layout_alignStart="@+id/imgTowel" />
 
@@ -120,8 +120,8 @@
             android:id="@+id/imF"
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:layout_alignLeft="@+id/textView"
-            android:layout_alignStart="@+id/textView"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_alignStart="@+id/textView1"
             android:layout_below="@+id/imgTowel"
             app:srcCompat="@drawable/f" />
 

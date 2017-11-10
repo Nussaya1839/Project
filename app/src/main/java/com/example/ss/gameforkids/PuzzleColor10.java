@@ -1,18 +1,14 @@
 package com.example.ss.gameforkids;
 
-import android.app.AlertDialog;
 import android.content.ClipData;
 import android.content.ClipDescription;
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.DragEvent;
 import android.view.MotionEvent;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -208,7 +204,7 @@ public class PuzzleColor10 extends AppCompatActivity {
         myhandler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent nextquest = new Intent(getApplicationContext(), PuzzleColorFinal.class);
+                Intent nextquest = new Intent(getApplicationContext(), PuzzleFinal.class);
                 strscore = Integer.toString(score);
                 nextquest.putExtra("score", strscore);
                 startActivity(nextquest);

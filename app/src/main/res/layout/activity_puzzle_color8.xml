@@ -34,7 +34,7 @@
             android:id="@+id/imv1"
             android:layout_width="50dp"
             android:layout_height="55dp"
-            android:layout_below="@+id/textView"
+            android:layout_below="@+id/textView1"
             android:layout_toLeftOf="@+id/imv2"
             android:layout_toStartOf="@+id/imv2"
             app:srcCompat="@drawable/box"/>

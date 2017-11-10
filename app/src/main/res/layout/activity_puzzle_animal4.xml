@@ -109,7 +109,7 @@
             app:srcCompat="@drawable/i" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/textView1"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_alignTop="@+id/imv1"
@@ -126,8 +126,8 @@
             android:id="@+id/textView2"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_alignBaseline="@+id/textView"
-            android:layout_alignBottom="@+id/textView"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_alignBottom="@+id/textView1"
             android:layout_alignEnd="@+id/imv2"
             android:layout_alignRight="@+id/imv2"
             android:text="E"
@@ -138,8 +138,8 @@
             android:id="@+id/textView4"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_alignBaseline="@+id/textView"
-            android:layout_alignBottom="@+id/textView"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_alignBottom="@+id/textView1"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:text="R"

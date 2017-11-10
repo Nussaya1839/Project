@@ -99,7 +99,7 @@
             android:layout_alignStart="@+id/imE" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/textView1"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:text="B"

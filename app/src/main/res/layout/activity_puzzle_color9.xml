@@ -35,7 +35,7 @@
             android:layout_width="50dp"
             android:layout_height="55dp"
             app:srcCompat="@drawable/box"
-            android:layout_below="@+id/textView"
+            android:layout_below="@+id/textView1"
             android:layout_toLeftOf="@+id/imv2"
             android:layout_toStartOf="@+id/imv2"/>
 
