@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bgg"
-    tools:context="com.example.ss.gameforkids.PuzzleOrgans4">
+    tools:context="com.example.ss.gameforkids.PuzzleKitchen6">
 
     <RelativeLayout
         android:layout_width="322dp"
@@ -19,12 +19,12 @@
         app:layout_constraintRight_toRightOf="parent">
 
         <ImageView
-            android:id="@+id/imgBlood"
+            android:id="@+id/imgApron"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            app:srcCompat="@drawable/blood" />
+            app:srcCompat="@drawable/apron" />
 
         <ImageView
             android:id="@+id/imv1"
@@ -79,7 +79,7 @@
             android:layout_marginTop="13dp"
             android:layout_toLeftOf="@+id/imv2"
             android:layout_toStartOf="@+id/imv2"
-            android:text="B"
+            android:text="A"
             android:textColor="@android:color/black"
             android:textSize="28sp"/>
 
@@ -91,7 +91,7 @@
             android:layout_alignBottom="@+id/textView1"
             android:layout_alignEnd="@+id/imv3"
             android:layout_alignRight="@+id/imv3"
-            android:text="O"
+            android:text="R"
             android:textColor="@android:color/black"
             android:textSize="28sp"/>
 
@@ -115,45 +115,45 @@
             android:layout_alignBottom="@+id/textView4"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:text="D"
+            android:text="N"
             android:textColor="@android:color/black"
             android:textSize="28sp"/>
-
-        <ImageView
-            android:id="@+id/imL"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_below="@+id/imgBlood"
-            android:layout_toLeftOf="@+id/imgBlood"
-            android:layout_toStartOf="@+id/imgBlood"
-            app:srcCompat="@drawable/l"/>
 
         <ImageView
             android:id="@+id/imR"
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:layout_below="@+id/imgBlood"
-            android:layout_toEndOf="@+id/imgBlood"
-            android:layout_toRightOf="@+id/imgBlood"
+            android:layout_below="@+id/imgApron"
+            android:layout_toLeftOf="@+id/imgApron"
+            android:layout_toStartOf="@+id/imgApron"
             app:srcCompat="@drawable/r"/>
 
         <ImageView
-            android:id="@+id/imE"
+            android:id="@+id/imP"
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:layout_alignLeft="@+id/imL"
-            android:layout_alignStart="@+id/imL"
-            android:layout_below="@+id/imL"
-            app:srcCompat="@drawable/e"/>
+            android:layout_below="@+id/imgApron"
+            android:layout_toEndOf="@+id/imgApron"
+            android:layout_toRightOf="@+id/imgApron"
+            app:srcCompat="@drawable/p"/>
 
         <ImageView
-            android:id="@+id/imA"
+            android:id="@+id/imB"
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:layout_alignLeft="@+id/imR"
             android:layout_alignStart="@+id/imR"
             android:layout_below="@+id/imR"
-            app:srcCompat="@drawable/a"/>
+            app:srcCompat="@drawable/b"/>
+
+        <ImageView
+            android:id="@+id/imD"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignLeft="@+id/imP"
+            android:layout_alignStart="@+id/imP"
+            android:layout_below="@+id/imP"
+            app:srcCompat="@drawable/d"/>
 
     </RelativeLayout>
 

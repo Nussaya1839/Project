@@ -111,6 +111,26 @@
         </activity>
         <activity android:name=".PuzzleOrgans10">
         </activity>
+        <activity android:name=".PuzzleKitchen1">
+        </activity>
+        <activity android:name=".PuzzleKitchen2">
+        </activity>
+        <activity android:name=".PuzzleKitchen3">
+        </activity>
+        <activity android:name=".PuzzleKitchen4">
+        </activity>
+        <activity android:name=".PuzzleKitchen5">
+        </activity>
+        <activity android:name=".PuzzleKitchen6">
+        </activity>
+        <activity android:name=".PuzzleKitchen7">
+        </activity>
+        <activity android:name=".PuzzleKitchen8">
+        </activity>
+        <activity android:name=".PuzzleKitchen9">
+        </activity>
+        <activity android:name=".PuzzleKitchen10">
+        </activity>
     </application>
 
 </manifest>

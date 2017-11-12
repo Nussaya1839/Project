@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bgg"
-    tools:context="com.example.ss.gameforkids.PuzzleBody7">
+    tools:context="com.example.ss.gameforkids.PuzzleKitchen5">
 
     <RelativeLayout
         android:layout_width="322dp"
@@ -19,10 +19,10 @@
         app:layout_constraintRight_toRightOf="parent">
 
         <ImageView
-            android:id="@+id/imgHair"
+            android:id="@+id/imgDish"
             android:layout_width="180dp"
             android:layout_height="180dp"
-            app:srcCompat="@drawable/hair"
+            app:srcCompat="@drawable/dish"
             android:layout_below="@+id/imv1"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="28dp"/>
@@ -68,73 +68,79 @@
             android:id="@+id/imR"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            app:srcCompat="@drawable/r"
-            android:layout_below="@+id/imgHair"
             android:layout_alignLeft="@+id/imv1"
-            android:layout_alignStart="@+id/imv1"/>
+            android:layout_alignStart="@+id/imv1"
+            android:layout_below="@+id/imgDish"
+            app:srcCompat="@drawable/r"/>
 
         <ImageView
-            android:id="@+id/imE"
+            android:id="@+id/imC"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            app:srcCompat="@drawable/e"
-            android:layout_below="@+id/imgHair"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"/>
+            android:layout_below="@+id/imgDish"
+            app:srcCompat="@drawable/c"/>
 
         <ImageView
             android:id="@+id/imA"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            app:srcCompat="@drawable/a"
-            android:layout_below="@+id/imR"
             android:layout_alignLeft="@+id/imR"
-            android:layout_alignStart="@+id/imR"/>
+            android:layout_alignStart="@+id/imR"
+            android:layout_below="@+id/imR"
+            app:srcCompat="@drawable/a"/>
 
         <ImageView
-            android:id="@+id/imO"
+            android:id="@+id/imS"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            app:srcCompat="@drawable/o"
-            android:layout_below="@+id/imE"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"/>
+            android:layout_below="@+id/imC"
+            app:srcCompat="@drawable/s"/>
 
         <TextView
             android:id="@+id/textView1"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:text="H"
+            android:layout_above="@+id/imgDish"
+            android:layout_marginBottom="14dp"
+            android:layout_toLeftOf="@+id/imv2"
+            android:layout_toStartOf="@+id/imv2"
+            android:text="D"
             android:textColor="@android:color/black"
             android:textSize="30sp"
-            android:layout_marginTop="14dp"
-            android:layout_alignTop="@+id/imv1"
-            android:layout_toLeftOf="@+id/imv2"
-            android:layout_toStartOf="@+id/imv2"/>
+            tools:layout_editor_absoluteX="39dp"
+            tools:layout_editor_absoluteY="66dp"/>
 
         <TextView
-            android:id="@+id/textView4"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_alignBaseline="@+id/textView4"
-            android:layout_alignBottom="@+id/textView4"
-            android:layout_toLeftOf="@+id/imv4"
-            android:layout_toStartOf="@+id/imv4"
-            android:text="I"
-            android:textColor="@android:color/black"
-            android:textSize="30sp"/>
-
-        <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/textView2"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_alignBaseline="@+id/textView1"
             android:layout_alignBottom="@+id/textView1"
+            android:layout_toLeftOf="@+id/imv3"
+            android:layout_toStartOf="@+id/imv3"
+            android:text="I"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            tools:layout_editor_absoluteX="137dp"
+            tools:layout_editor_absoluteY="66dp"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@+id/textView2"
+            android:layout_alignBottom="@+id/textView2"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:text="R"
+            android:text="H"
             android:textColor="@android:color/black"
-            android:textSize="30sp"/>
+            android:textSize="30sp"
+            tools:layout_editor_absoluteX="500dp"
+            tools:layout_editor_absoluteY="66dp"/>
 
     </RelativeLayout>
 

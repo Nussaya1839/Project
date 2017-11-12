@@ -121,7 +121,7 @@
             app:srcCompat="@drawable/l"/>
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/textView2"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_alignBaseline="@+id/textView2"

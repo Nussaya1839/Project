@@ -25,8 +25,7 @@ public class ListPuzzle extends AppCompatActivity {
 
     ListView list_puzzle;
     String[] st_category ={"Colors (สีต่าง ๆ)", "Animals (สัตว์)", "My Body (ร่างกาย)", "Food (อาหาร)",
-            "Internal Organs (อวัยวะภายใน)", "Kitchen (ห้องครัว)", "Minerals and Metals (แร่และโลหะ)",
-            "Natural (ธรรมชาติ)", "Tool Supplies (เครื่องมือช่าง)"};
+            "Internal Organs (อวัยวะภายใน)", "Kitchen (ห้องครัว)", "Natural (ธรรมชาติ)", "Tool Supplies (เครื่องมือช่าง)"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,6 +64,11 @@ public class ListPuzzle extends AppCompatActivity {
 
                     case 4 :
                         intent = new Intent(getApplicationContext(),PuzzleOrgans1.class);
+                        startActivity(intent);
+                        break;
+
+                    case 5 :
+                        intent = new Intent(getApplicationContext(),PuzzleKitchen1.class);
                         startActivity(intent);
                         break;
                 }
