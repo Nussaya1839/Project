@@ -12,9 +12,9 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-public class PuzzleFood6 extends AppCompatActivity {
-    ImageView imv1, imv2, imv3, imv4;
-    ImageView imD, imK, imE, imC;
+public class PuzzleFood10 extends AppCompatActivity {
+    ImageView imv1, imv2, imv3, imv4, imv5;
+    ImageView imI, imO, imU, imE;
     private String msg = "debug";
     private int score = 0;
     private String strscore, strReceiveScore;
@@ -22,39 +22,53 @@ public class PuzzleFood6 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_puzzle_food6);
+        setContentView(R.layout.activity_puzzle_food10);
 
         strReceiveScore = getIntent().getStringExtra("score");
         score = Integer.parseInt(strReceiveScore);
-        imD= (ImageView) findViewById(R.id.imD);
-        imK= (ImageView) findViewById(R.id.imK);
+        imI= (ImageView) findViewById(R.id.imI);
+        imO= (ImageView) findViewById(R.id.imO);
+        imU= (ImageView) findViewById(R.id.imU);
         imE= (ImageView) findViewById(R.id.imE);
-        imC= (ImageView) findViewById(R.id.imC);
         imv3 = (ImageView) findViewById(R.id.imv3);
 
-        imD.setOnLongClickListener(new View.OnLongClickListener() {
+        imI.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View v) {
                 ClipData.Item item = new ClipData.Item((CharSequence) v.getTag());
                 String[] mimeTypes = {ClipDescription.MIMETYPE_TEXT_PLAIN};
 
                 ClipData dragData = new ClipData(v.getTag().toString(), mimeTypes, item);
-                View.DragShadowBuilder myShadow = new View.DragShadowBuilder(imD);
+                View.DragShadowBuilder myShadow = new View.DragShadowBuilder(imI);
 
                 v.startDrag(dragData, myShadow, null, 0);
                 return true;
             }
         });
 
-        imK.setOnLongClickListener(new View.OnLongClickListener() {
+        imO.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View v) {
                 ClipData.Item item = new ClipData.Item((CharSequence) v.getTag());
                 String[] mimeTypes = {ClipDescription.MIMETYPE_TEXT_PLAIN};
 
                 ClipData dragData = new ClipData(v.getTag().toString(), mimeTypes, item);
-                View.DragShadowBuilder myShadow = new View.DragShadowBuilder(imK);
+                View.DragShadowBuilder myShadow = new View.DragShadowBuilder(imO);
 
+                return true;
+            }
+        });
+
+        imU.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                ClipData.Item item = new ClipData.Item((CharSequence) v.getTag());
+                String[] mimeTypes = {ClipDescription.MIMETYPE_TEXT_PLAIN};
+
+                ClipData dragData = new ClipData(v.getTag().toString(), mimeTypes, item);
+                View.DragShadowBuilder myShadow = new View.DragShadowBuilder(imU);
+
+                v.startDrag(dragData, myShadow, null, 0);
                 return true;
             }
         });
@@ -73,20 +87,6 @@ public class PuzzleFood6 extends AppCompatActivity {
             }
         });
 
-        imC.setOnLongClickListener(new View.OnLongClickListener() {
-            @Override
-            public boolean onLongClick(View v) {
-                ClipData.Item item = new ClipData.Item((CharSequence) v.getTag());
-                String[] mimeTypes = {ClipDescription.MIMETYPE_TEXT_PLAIN};
-
-                ClipData dragData = new ClipData(v.getTag().toString(), mimeTypes, item);
-                View.DragShadowBuilder myShadow = new View.DragShadowBuilder(imC);
-
-                v.startDrag(dragData, myShadow, null, 0);
-                return true;
-            }
-        });
-
         imv3.setOnDragListener(new View.OnDragListener() {
             @Override
             public boolean onDrag(View v, DragEvent event) {
@@ -94,37 +94,37 @@ public class PuzzleFood6 extends AppCompatActivity {
                     case DragEvent.ACTION_DROP:
                         Log.d(msg, "ACTION_DROP event " + event.getClipData().getItemAt(0).getText());
                         int itemId = Integer.parseInt((String) event.getClipData().getItemAt(0).getText());
-                        if ((itemId == R.id.imD)) {
+                        if ((itemId == R.id.imI)) {
                             Toast.makeText(getApplicationContext(), "ผิด", Toast.LENGTH_LONG).show();
                             float gx = imv3.getX();
                             float gy = imv3.getY();
-                            imD.setX(gx);
-                            imD.setY(gy);
+                            imI.setX(gx);
+                            imI.setY(gy);
                             delay();
                         }
-                        if (itemId == R.id.imK) {
+                        if (itemId == R.id.imO) {
+                            Toast.makeText(getApplicationContext(), "ผิด", Toast.LENGTH_LONG).show();
+                            float gx = imv3.getX();
+                            float gy = imv3.getY();
+                            imO.setX(gx);
+                            imO.setY(gy);
+                            delay();
+                        }
+                        if (itemId == R.id.imU) {
+                            Toast.makeText(getApplicationContext(), "ผิด", Toast.LENGTH_LONG).show();
+                            float gx = imv3.getX();
+                            float gy = imv3.getY();
+                            imU.setX(gx);
+                            imU.setY(gy);
+                            delay();
+                        }
+                        if ((itemId == R.id.imE)) {
                             score++;
                             Toast.makeText(getApplicationContext(), "ถูกต้อง", Toast.LENGTH_LONG).show();
                             float gx = imv3.getX();
                             float gy = imv3.getY();
-                            imK.setX(gx);
-                            imK.setY(gy);
-                            delay();
-                        }
-                        if (itemId == R.id.imE) {
-                            Toast.makeText(getApplicationContext(), "ผิด", Toast.LENGTH_LONG).show();
-                            float gx = imv3.getX();
-                            float gy = imv3.getY();
                             imE.setX(gx);
                             imE.setY(gy);
-                            delay();
-                        }
-                        if ((itemId == R.id.imC)) {
-                            Toast.makeText(getApplicationContext(), "ผิด", Toast.LENGTH_LONG).show();
-                            float gx = imv3.getX();
-                            float gy = imv3.getY();
-                            imC.setX(gx);
-                            imC.setY(gy);
                             delay();
                         }
                         break;
@@ -135,14 +135,14 @@ public class PuzzleFood6 extends AppCompatActivity {
             }
         });
 
-        imD.setOnTouchListener(new View.OnTouchListener() {
+        imI.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                    ClipData data = ClipData.newPlainText("id", "" + imD.getId());
-                    View.DragShadowBuilder shadowBuilder = new View.DragShadowBuilder(imD);
+                    ClipData data = ClipData.newPlainText("id", "" + imI.getId());
+                    View.DragShadowBuilder shadowBuilder = new View.DragShadowBuilder(imI);
 
-                    imD.startDrag(data, shadowBuilder, imD, 0);
+                    imI.startDrag(data, shadowBuilder, imI, 0);
 
                     return true;
                 } else {
@@ -150,14 +150,29 @@ public class PuzzleFood6 extends AppCompatActivity {
                 }
             }
         });
-        imK.setOnTouchListener(new View.OnTouchListener() {
+        imO.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                    ClipData data = ClipData.newPlainText("id", "" + imK.getId());
-                    View.DragShadowBuilder shadowBuilder = new View.DragShadowBuilder(imK);
+                    ClipData data = ClipData.newPlainText("id", "" + imO.getId());
+                    View.DragShadowBuilder shadowBuilder = new View.DragShadowBuilder(imO);
 
-                    imK.startDrag(data, shadowBuilder, imK, 0);
+                    imO.startDrag(data, shadowBuilder, imO, 0);
+
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+        });
+        imU.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                    ClipData data = ClipData.newPlainText("id", "" + imU.getId());
+                    View.DragShadowBuilder shadowBuilder = new View.DragShadowBuilder(imU);
+
+                    imU.startDrag(data, shadowBuilder, imU, 0);
 
                     return true;
                 } else {
@@ -180,21 +195,6 @@ public class PuzzleFood6 extends AppCompatActivity {
                 }
             }
         });
-        imC.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                    ClipData data = ClipData.newPlainText("id", "" + imC.getId());
-                    View.DragShadowBuilder shadowBuilder = new View.DragShadowBuilder(imC);
-
-                    imC.startDrag(data, shadowBuilder, imC, 0);
-
-                    return true;
-                } else {
-                    return false;
-                }
-            }
-        });
     }
 
     private void delay() {
@@ -202,7 +202,7 @@ public class PuzzleFood6 extends AppCompatActivity {
         myhandler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent nextquest = new Intent(getApplicationContext(), PuzzleFood7.class);
+                Intent nextquest = new Intent(getApplicationContext(), PuzzleFinal.class);
                 strscore = Integer.toString(score);
                 nextquest.putExtra("score", strscore);
                 startActivity(nextquest);

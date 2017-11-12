@@ -71,10 +71,6 @@
         </activity>
         <activity android:name=".PuzzleBody10">
         </activity>
-        <activity android:name=".PuzzleColorFinal">
-        </activity>
-        <activity android:name=".PuzzleBodyFinal">
-        </activity>
         <activity android:name=".PuzzleFinal">
         </activity>
         <activity android:name=".PuzzleFood2">
@@ -86,6 +82,34 @@
         <activity android:name=".PuzzleFood6">
         </activity>
         <activity android:name=".PuzzleFood5">
+        </activity>
+        <activity android:name=".PuzzleFood7">
+        </activity>
+        <activity android:name=".PuzzleFood8">
+        </activity>
+        <activity android:name=".PuzzleFood9">
+        </activity>
+        <activity android:name=".PuzzleFood10">
+        </activity>
+        <activity android:name=".PuzzleOrgans1">
+        </activity>
+        <activity android:name=".PuzzleOrgans2">
+        </activity>
+        <activity android:name=".PuzzleOrgans3">
+        </activity>
+        <activity android:name=".PuzzleOrgans4">
+        </activity>
+        <activity android:name=".PuzzleOrgans5">
+        </activity>
+        <activity android:name=".PuzzleOrgans6">
+        </activity>
+        <activity android:name=".PuzzleOrgans7">
+        </activity>
+        <activity android:name=".PuzzleOrgans8">
+        </activity>
+        <activity android:name=".PuzzleOrgans9">
+        </activity>
+        <activity android:name=".PuzzleOrgans10">
         </activity>
     </application>
 

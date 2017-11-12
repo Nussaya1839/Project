@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bgg"
-    tools:context="com.example.ss.gameforkids.PuzzleBathroom5">
+    tools:context="com.example.ss.gameforkids.PuzzleOrgans6">
 
     <RelativeLayout
         android:layout_width="322dp"
@@ -18,22 +19,22 @@
         app:layout_constraintRight_toRightOf="parent">
 
         <ImageView
-            android:id="@+id/imgShelf"
+            android:id="@+id/imgHeart"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            app:srcCompat="@drawable/shelf" />
+            app:srcCompat="@drawable/heart" />
 
         <ImageView
             android:id="@+id/imv1"
             android:layout_width="65dp"
             android:layout_height="70dp"
+            android:layout_marginBottom="45dp"
             app:srcCompat="@drawable/box"
-            android:layout_above="@+id/imgShelf"
+            android:layout_above="@+id/imgTowel"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginBottom="42dp" />
+            android:layout_alignParentStart="true" />
 
         <ImageView
             android:id="@+id/imv2"
@@ -69,89 +70,90 @@
             android:layout_alignTop="@+id/imv4"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true" />
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:text="H"
-            android:textColor="@android:color/black"
-            android:textSize="28sp"
-            android:layout_alignBottom="@+id/imv2"
-            android:layout_alignLeft="@+id/imgShelf"
-            android:layout_alignStart="@+id/imgShelf"
-            android:layout_marginBottom="14dp" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/textView1"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:text="E"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="13dp"
+            android:layout_toLeftOf="@+id/imv2"
+            android:layout_toStartOf="@+id/imv2"
+            android:text="H"
             android:textColor="@android:color/black"
-            android:textSize="28sp"
-            android:layout_alignBaseline="@+id/textView4"
-            android:layout_alignBottom="@+id/textView4"
+            android:textSize="28sp"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_alignBottom="@+id/textView1"
             android:layout_toLeftOf="@+id/imv4"
-            android:layout_toStartOf="@+id/imv4" />
+            android:layout_toStartOf="@+id/imv4"
+            android:text="A"
+            android:textColor="@android:color/black"
+            android:textSize="28sp"/>
 
         <TextView
             android:id="@+id/textView4"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:text="L"
-            android:textColor="@android:color/black"
-            android:textSize="28sp"
-            android:layout_alignBaseline="@+id/textView2"
-            android:layout_alignBottom="@+id/textView2"
+            android:layout_alignBaseline="@+id/textView3"
+            android:layout_alignBottom="@+id/textView3"
             android:layout_toLeftOf="@+id/imv5"
-            android:layout_toStartOf="@+id/imv5" />
+            android:layout_toStartOf="@+id/imv5"
+            android:text="R"
+            android:textColor="@android:color/black"
+            android:textSize="28sp"/>
+
         <TextView
             android:id="@+id/textView5"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:text="F"
-            android:textSize="28sp"
-            android:textColor="@android:color/black"
             android:layout_alignBaseline="@+id/textView4"
             android:layout_alignBottom="@+id/textView4"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true" />
+            android:text="T"
+            android:textColor="@android:color/black"
+            android:textSize="28sp"/>
 
         <ImageView
-            android:id="@+id/imS"
+            android:id="@+id/imR"
             android:layout_width="70dp"
             android:layout_height="70dp"
-            app:srcCompat="@drawable/s"
-            android:layout_below="@+id/imgShelf"
-            android:layout_toLeftOf="@+id/imgShelf"
-            android:layout_toStartOf="@+id/imgShelf" />
+            android:layout_below="@+id/imgHeart"
+            android:layout_toLeftOf="@+id/imgHeart"
+            android:layout_toStartOf="@+id/imgHeart"
+            app:srcCompat="@drawable/r"/>
+
+        <ImageView
+            android:id="@+id/imE"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/imgHeart"
+            android:layout_toEndOf="@+id/imgHeart"
+            android:layout_toRightOf="@+id/imgHeart"
+            app:srcCompat="@drawable/e"/>
+
+        <ImageView
+            android:id="@+id/imI"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignLeft="@+id/imR"
+            android:layout_alignStart="@+id/imR"
+            android:layout_below="@+id/imR"
+            app:srcCompat="@drawable/i"/>
 
         <ImageView
             android:id="@+id/imC"
             android:layout_width="70dp"
             android:layout_height="70dp"
-            app:srcCompat="@drawable/c"
-            android:layout_below="@+id/imgShelf"
-            android:layout_toRightOf="@+id/imgShelf"
-            android:layout_toEndOf="@+id/imgShelf" />
-
-        <ImageView
-            android:id="@+id/imG"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            app:srcCompat="@drawable/g"
-            android:layout_below="@+id/imS"
-            android:layout_alignLeft="@+id/imS"
-            android:layout_alignStart="@+id/imS" />
-
-        <ImageView
-            android:id="@+id/imK"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            app:srcCompat="@drawable/k"
-            android:layout_below="@+id/imC"
-            android:layout_alignLeft="@+id/imC"
-            android:layout_alignStart="@+id/imC" />
-
+            android:layout_alignLeft="@+id/imE"
+            android:layout_alignStart="@+id/imE"
+            android:layout_below="@+id/imE"
+            app:srcCompat="@drawable/c"/>
 
     </RelativeLayout>
 

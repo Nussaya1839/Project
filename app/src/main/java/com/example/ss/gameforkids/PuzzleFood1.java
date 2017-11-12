@@ -17,15 +17,13 @@ public class PuzzleFood1 extends AppCompatActivity {
     ImageView imI, imE, imR, imA;
     private String msg = "debug";
     private int score = 0;
-    private String strscore, strReceiveScore;
+    private String strscore;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_puzzle_food1);
 
-        strReceiveScore = getIntent().getStringExtra("score");
-        score = Integer.parseInt(strReceiveScore);
         imI= (ImageView) findViewById(R.id.imI);
         imE= (ImageView) findViewById(R.id.imE);
         imR= (ImageView) findViewById(R.id.imR);

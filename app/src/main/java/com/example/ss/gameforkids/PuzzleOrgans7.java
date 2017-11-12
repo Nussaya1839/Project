@@ -12,9 +12,9 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-public class PuzzleFood6 extends AppCompatActivity {
-    ImageView imv1, imv2, imv3, imv4;
-    ImageView imD, imK, imE, imC;
+public class PuzzleOrgans7 extends AppCompatActivity {
+    ImageView imv1, imv2, imv3, imv4, imv5;
+    ImageView imD, imK, imW, imV;
     private String msg = "debug";
     private int score = 0;
     private String strscore, strReceiveScore;
@@ -22,14 +22,14 @@ public class PuzzleFood6 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_puzzle_food6);
+        setContentView(R.layout.activity_puzzle_organs7);
 
         strReceiveScore = getIntent().getStringExtra("score");
         score = Integer.parseInt(strReceiveScore);
         imD= (ImageView) findViewById(R.id.imD);
         imK= (ImageView) findViewById(R.id.imK);
-        imE= (ImageView) findViewById(R.id.imE);
-        imC= (ImageView) findViewById(R.id.imC);
+        imW= (ImageView) findViewById(R.id.imW);
+        imV= (ImageView) findViewById(R.id.imV);
         imv3 = (ImageView) findViewById(R.id.imv3);
 
         imD.setOnLongClickListener(new View.OnLongClickListener() {
@@ -59,28 +59,28 @@ public class PuzzleFood6 extends AppCompatActivity {
             }
         });
 
-        imE.setOnLongClickListener(new View.OnLongClickListener() {
+        imW.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View v) {
                 ClipData.Item item = new ClipData.Item((CharSequence) v.getTag());
                 String[] mimeTypes = {ClipDescription.MIMETYPE_TEXT_PLAIN};
 
                 ClipData dragData = new ClipData(v.getTag().toString(), mimeTypes, item);
-                View.DragShadowBuilder myShadow = new View.DragShadowBuilder(imE);
+                View.DragShadowBuilder myShadow = new View.DragShadowBuilder(imW);
 
                 v.startDrag(dragData, myShadow, null, 0);
                 return true;
             }
         });
 
-        imC.setOnLongClickListener(new View.OnLongClickListener() {
+        imV.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View v) {
                 ClipData.Item item = new ClipData.Item((CharSequence) v.getTag());
                 String[] mimeTypes = {ClipDescription.MIMETYPE_TEXT_PLAIN};
 
                 ClipData dragData = new ClipData(v.getTag().toString(), mimeTypes, item);
-                View.DragShadowBuilder myShadow = new View.DragShadowBuilder(imC);
+                View.DragShadowBuilder myShadow = new View.DragShadowBuilder(imV);
 
                 v.startDrag(dragData, myShadow, null, 0);
                 return true;
@@ -103,28 +103,28 @@ public class PuzzleFood6 extends AppCompatActivity {
                             delay();
                         }
                         if (itemId == R.id.imK) {
-                            score++;
-                            Toast.makeText(getApplicationContext(), "ถูกต้อง", Toast.LENGTH_LONG).show();
+                            Toast.makeText(getApplicationContext(), "ผิด", Toast.LENGTH_LONG).show();
                             float gx = imv3.getX();
                             float gy = imv3.getY();
                             imK.setX(gx);
                             imK.setY(gy);
                             delay();
                         }
-                        if (itemId == R.id.imE) {
+                        if (itemId == R.id.imW) {
                             Toast.makeText(getApplicationContext(), "ผิด", Toast.LENGTH_LONG).show();
                             float gx = imv3.getX();
                             float gy = imv3.getY();
-                            imE.setX(gx);
-                            imE.setY(gy);
+                            imW.setX(gx);
+                            imW.setY(gy);
                             delay();
                         }
-                        if ((itemId == R.id.imC)) {
-                            Toast.makeText(getApplicationContext(), "ผิด", Toast.LENGTH_LONG).show();
+                        if ((itemId == R.id.imV)) {
+                            score++;
+                            Toast.makeText(getApplicationContext(), "ถูกต้อง", Toast.LENGTH_LONG).show();
                             float gx = imv3.getX();
                             float gy = imv3.getY();
-                            imC.setX(gx);
-                            imC.setY(gy);
+                            imV.setX(gx);
+                            imV.setY(gy);
                             delay();
                         }
                         break;
@@ -165,14 +165,14 @@ public class PuzzleFood6 extends AppCompatActivity {
                 }
             }
         });
-        imE.setOnTouchListener(new View.OnTouchListener() {
+        imW.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                    ClipData data = ClipData.newPlainText("id", "" + imE.getId());
-                    View.DragShadowBuilder shadowBuilder = new View.DragShadowBuilder(imE);
+                    ClipData data = ClipData.newPlainText("id", "" + imW.getId());
+                    View.DragShadowBuilder shadowBuilder = new View.DragShadowBuilder(imW);
 
-                    imE.startDrag(data, shadowBuilder, imE, 0);
+                    imW.startDrag(data, shadowBuilder, imW, 0);
 
                     return true;
                 } else {
@@ -180,14 +180,14 @@ public class PuzzleFood6 extends AppCompatActivity {
                 }
             }
         });
-        imC.setOnTouchListener(new View.OnTouchListener() {
+        imV.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                    ClipData data = ClipData.newPlainText("id", "" + imC.getId());
-                    View.DragShadowBuilder shadowBuilder = new View.DragShadowBuilder(imC);
+                    ClipData data = ClipData.newPlainText("id", "" + imV.getId());
+                    View.DragShadowBuilder shadowBuilder = new View.DragShadowBuilder(imV);
 
-                    imC.startDrag(data, shadowBuilder, imC, 0);
+                    imV.startDrag(data, shadowBuilder, imV, 0);
 
                     return true;
                 } else {
@@ -195,6 +195,7 @@ public class PuzzleFood6 extends AppCompatActivity {
                 }
             }
         });
+
     }
 
     private void delay() {
@@ -202,7 +203,7 @@ public class PuzzleFood6 extends AppCompatActivity {
         myhandler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent nextquest = new Intent(getApplicationContext(), PuzzleFood7.class);
+                Intent nextquest = new Intent(getApplicationContext(), PuzzleOrgans8.class);
                 strscore = Integer.toString(score);
                 nextquest.putExtra("score", strscore);
                 startActivity(nextquest);
