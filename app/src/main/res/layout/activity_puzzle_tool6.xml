@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgg"
+    tools:context="com.example.ss.gameforkids.PuzzleTool6">
+
+    <RelativeLayout
+        android:layout_width="322dp"
+        android:layout_height="482dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <ImageView
+            android:id="@+id/imgPaint"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/paint" />
+
+        <ImageView
+            android:id="@+id/imv1"
+            android:layout_width="65dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="45dp"
+            app:srcCompat="@drawable/box"
+            android:layout_above="@+id/imgTowel"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:id="@+id/imv2"
+            android:layout_width="65dp"
+            android:layout_height="70dp"
+            android:layout_alignTop="@+id/imv1"
+            android:layout_toEndOf="@+id/imv1"
+            android:layout_toRightOf="@+id/imv1"
+            app:srcCompat="@drawable/box" />
+
+        <ImageView
+            android:id="@+id/imv3"
+            android:layout_width="65dp"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/box"
+            android:layout_alignTop="@+id/imv2"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/imv4"
+            android:layout_width="65dp"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/box"
+            android:layout_alignTop="@+id/imv3"
+            android:layout_toRightOf="@+id/imv3"
+            android:layout_toEndOf="@+id/imv3" />
+
+        <ImageView
+            android:id="@+id/imv5"
+            android:layout_width="65dp"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/box"
+            android:layout_alignTop="@+id/imv4"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignEnd="@+id/imv1"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/imv1"
+            android:layout_marginTop="14dp"
+            android:text="P"
+            android:textColor="@android:color/black"
+            android:textSize="28sp"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_alignEnd="@+id/imv2"
+            android:layout_alignRight="@+id/imv2"
+            android:text="A"
+            android:textColor="@android:color/black"
+            android:textSize="28sp"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@+id/textView2"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_toLeftOf="@+id/imv4"
+            android:layout_toStartOf="@+id/imv4"
+            android:text="I"
+            android:textColor="@android:color/black"
+            android:textSize="28sp"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignBaseline="@+id/textView3"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_alignEnd="@+id/imv4"
+            android:layout_alignRight="@+id/imv4"
+            android:text="N"
+            android:textColor="@android:color/black"
+            android:textSize="28sp"/>
+
+        <ImageView
+            android:id="@+id/imE"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/imgPaint"
+            android:layout_toLeftOf="@+id/imgPaint"
+            android:layout_toStartOf="@+id/imgPaint"
+            app:srcCompat="@drawable/e"/>
+
+        <ImageView
+            android:id="@+id/imT"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/imgPaint"
+            android:layout_toEndOf="@+id/imgPaint"
+            android:layout_toRightOf="@+id/imgPaint"
+            app:srcCompat="@drawable/t"/>
+
+        <ImageView
+            android:id="@+id/imZ"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignLeft="@+id/imE"
+            android:layout_alignStart="@+id/imE"
+            android:layout_below="@+id/imE"
+            app:srcCompat="@drawable/z"/>
+
+        <ImageView
+            android:id="@+id/imD"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignLeft="@+id/imT"
+            android:layout_alignStart="@+id/imT"
+            android:layout_below="@+id/imT"
+            app:srcCompat="@drawable/d"/>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

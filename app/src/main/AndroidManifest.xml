@@ -131,6 +131,46 @@
         </activity>
         <activity android:name=".PuzzleKitchen10">
         </activity>
+        <activity android:name=".PuzzleNatural1">
+        </activity>
+        <activity android:name=".PuzzleNatural2">
+        </activity>
+        <activity android:name=".PuzzleNatural3">
+        </activity>
+        <activity android:name=".PuzzleNatural4">
+        </activity>
+        <activity android:name=".PuzzleNatural5">
+        </activity>
+        <activity android:name=".PuzzleNatural6">
+        </activity>
+        <activity android:name=".PuzzleNatural7">
+        </activity>
+        <activity android:name=".PuzzleNatural8">
+        </activity>
+        <activity android:name=".PuzzleNatural9">
+        </activity>
+        <activity android:name=".PuzzleNatural10">
+        </activity>
+        <activity android:name=".PuzzleTool1">
+        </activity>
+        <activity android:name=".PuzzleTool2">
+        </activity>
+        <activity android:name=".PuzzleTool3">
+        </activity>
+        <activity android:name=".PuzzleTool4">
+        </activity>
+        <activity android:name=".PuzzleTool5">
+        </activity>
+        <activity android:name=".PuzzleTool6">
+        </activity>
+        <activity android:name=".PuzzleTool7">
+        </activity>
+        <activity android:name=".PuzzleTool8">
+        </activity>
+        <activity android:name=".PuzzleTool9">
+        </activity>
+        <activity android:name=".PuzzleTool10">
+        </activity>
     </application>
 
 </manifest>
