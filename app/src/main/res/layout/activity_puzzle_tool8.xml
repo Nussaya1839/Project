@@ -106,10 +106,10 @@
             android:id="@+id/imI"
             android:layout_width="55dp"
             android:layout_height="55dp"
-            android:layout_alignLeft="@+id/textView"
+            android:layout_alignLeft="@+id/imA"
             android:layout_alignParentBottom="true"
-            android:layout_alignStart="@+id/textView"
-            android:layout_marginBottom="20dp"
+            android:layout_alignStart="@+id/imA"
+            android:layout_marginBottom="19dp"
             app:srcCompat="@drawable/i"/>
 
         <ImageView

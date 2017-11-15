@@ -71,6 +71,16 @@ public class ListPuzzle extends AppCompatActivity {
                         intent = new Intent(getApplicationContext(),PuzzleKitchen1.class);
                         startActivity(intent);
                         break;
+
+                    case 6 :
+                        intent = new Intent(getApplicationContext(),PuzzleNatural1.class);
+                        startActivity(intent);
+                        break;
+
+                    case 7 :
+                        intent = new Intent(getApplicationContext(),PuzzleTool1.class);
+                        startActivity(intent);
+                        break;
                 }
             }
         });
