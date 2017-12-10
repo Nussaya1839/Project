@@ -171,6 +171,8 @@
         </activity>
         <activity android:name=".PuzzleTool10">
         </activity>
+        <activity android:name=".ListenGame">
+        </activity>
     </application>
 
 </manifest>

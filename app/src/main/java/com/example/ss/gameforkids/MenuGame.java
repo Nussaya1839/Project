@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.ImageView;
 
 public class MenuGame extends AppCompatActivity {
-    ImageView imvPuzzle;
+    ImageView imvPuzzle, imvListen;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,11 +15,19 @@ public class MenuGame extends AppCompatActivity {
         setContentView(R.layout.activity_menu_game);
 
         imvPuzzle=(ImageView)findViewById(R.id.imvPuzzle);
+        imvListen=(ImageView)findViewById(R.id.imvListen);
         imvPuzzle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent imvPuzzle=new Intent(MenuGame.this,PuzzleGame.class);
                 startActivity(imvPuzzle);
+            }
+        });
+        imvListen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent imvListen=new Intent(MenuGame.this,ListenGame.class);
+                startActivity(imvListen);
             }
         });
     }

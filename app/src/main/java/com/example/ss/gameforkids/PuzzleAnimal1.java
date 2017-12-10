@@ -11,6 +11,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
+import android.media.MediaPlayer;
 
 public class PuzzleAnimal1 extends AppCompatActivity {
     ImageView imv1, imv2, imv3, imv4;
@@ -23,6 +24,8 @@ public class PuzzleAnimal1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_puzzle_animal1);
+        final MediaPlayer correct = MediaPlayer.create(this, R.raw.correct);
+        final MediaPlayer incorrect = MediaPlayer.create(this, R.raw.incorrect);
 
         imA= (ImageView) findViewById(R.id.imA);
         imE= (ImageView) findViewById(R.id.imE);
@@ -93,6 +96,7 @@ public class PuzzleAnimal1 extends AppCompatActivity {
                         Log.d(msg, "ACTION_DROP event " + event.getClipData().getItemAt(0).getText());
                         int itemId = Integer.parseInt((String) event.getClipData().getItemAt(0).getText());
                         if ((itemId == R.id.imA)) {
+                            correct.start();
                             score++;
                             Toast.makeText(getApplicationContext(), "ถูกต้อง", Toast.LENGTH_LONG).show();
                             float gx = imv3.getX();
@@ -102,6 +106,7 @@ public class PuzzleAnimal1 extends AppCompatActivity {
                             delay();
                         }
                         if (itemId == R.id.imE) {
+                            incorrect.start();
                             Toast.makeText(getApplicationContext(), "ผิด", Toast.LENGTH_LONG).show();
                             float gx = imv3.getX();
                             float gy = imv3.getY();
@@ -109,7 +114,7 @@ public class PuzzleAnimal1 extends AppCompatActivity {
                             imE.setY(gy);
                             delay();
                         }  if ((itemId == R.id.imO)) {
-
+                            incorrect.start();
                             Toast.makeText(getApplicationContext(), "ผิด", Toast.LENGTH_LONG).show();
                             float gx = imv3.getX();
                             float gy = imv3.getY();
@@ -118,6 +123,7 @@ public class PuzzleAnimal1 extends AppCompatActivity {
                             delay();
                         }
                         if ((itemId == R.id.imR)) {
+                            incorrect.start();
                             Toast.makeText(getApplicationContext(), "ผิด", Toast.LENGTH_LONG).show();
                             float gx = imv3.getX();
                             float gy = imv3.getY();
