@@ -26,6 +26,8 @@ public class ListenFamily2 extends AppCompatActivity {
         super.onCreate( savedInstanceState );
         setContentView( R.layout.activity_listen_family2 );
 
+        strReceiveScore = getIntent().getStringExtra("score");
+        score = Integer.parseInt(strReceiveScore);
         ra1 = (RadioButton)findViewById(R.id.ra1);
         ra2 = (RadioButton)findViewById(R.id.ra2);
         ra3 = (RadioButton)findViewById(R.id.ra3);
