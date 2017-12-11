@@ -104,6 +104,7 @@ public class PuzzleKitchen3 extends AppCompatActivity {
                             float gy = imv2.getY();
                             imU.setX(gx);
                             imU.setY(gy);
+                            enable( false );
                             delay();
                         }
                         if (itemId == R.id.imI) {
@@ -113,6 +114,7 @@ public class PuzzleKitchen3 extends AppCompatActivity {
                             float gy = imv2.getY();
                             imI.setX(gx);
                             imI.setY(gy);
+                            enable( false );
                             delay();
                         }
                         if (itemId == R.id.imA) {
@@ -123,6 +125,7 @@ public class PuzzleKitchen3 extends AppCompatActivity {
                             float gy = imv2.getY();
                             imA.setX(gx);
                             imA.setY(gy);
+                            enable( false );
                             delay();
                         }
                         if ((itemId == R.id.imO)) {
@@ -132,6 +135,7 @@ public class PuzzleKitchen3 extends AppCompatActivity {
                             float gy = imv2.getY();
                             imO.setX(gx);
                             imO.setY(gy);
+                            enable( false );
                             delay();
                         }
                         break;
@@ -205,6 +209,17 @@ public class PuzzleKitchen3 extends AppCompatActivity {
 
     }
 
+    protected boolean enabled = true;
+    public void enable(boolean b) {
+        enabled = b;
+    }
+    @Override
+    public boolean dispatchTouchEvent(MotionEvent ev) {
+        return enabled ?
+                super.dispatchTouchEvent(ev) :
+                true;
+    }
+
     private void delay() {
         android.os.Handler myhandler = new android.os.Handler();
         myhandler.postDelayed(new Runnable() {
@@ -216,7 +231,7 @@ public class PuzzleKitchen3 extends AppCompatActivity {
                 startActivity(nextquest);
 
             }
-        }, 1000);
+        }, 3000);
     }
 
     public void onBackPressed() {

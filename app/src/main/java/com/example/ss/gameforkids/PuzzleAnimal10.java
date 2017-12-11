@@ -105,6 +105,7 @@ public class PuzzleAnimal10 extends AppCompatActivity {
                             float gy = imv2.getY();
                             imO.setX(gx);
                             imO.setY(gy);
+                            enable( false );
                             delay();
 
                         }
@@ -115,6 +116,7 @@ public class PuzzleAnimal10 extends AppCompatActivity {
                             float gy = imv2.getY();
                             imA.setX(gx);
                             imA.setY(gy);
+                            enable( false );
                             delay();
                         }
                         if ((itemId == R.id.imE)) {
@@ -124,6 +126,7 @@ public class PuzzleAnimal10 extends AppCompatActivity {
                             float gy = imv2.getY();
                             imE.setX(gx);
                             imE.setY(gy);
+                            enable( false );
                             delay();
                         }
                         if ((itemId == R.id.imU)) {
@@ -133,6 +136,7 @@ public class PuzzleAnimal10 extends AppCompatActivity {
                             float gy = imv2.getY();
                             imU.setX(gx);
                             imU.setY(gy);
+                            enable( false );
                             delay();
                         }
                         break;
@@ -206,40 +210,16 @@ public class PuzzleAnimal10 extends AppCompatActivity {
 
     }
 
-    /*private void delay() {
-        android.os.Handler myhandler = new android.os.Handler();
-        myhandler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                showscore();
-
-            }
-        }, 2000);
+    protected boolean enabled = true;
+    public void enable(boolean b) {
+        enabled = b;
     }
-
-    private void showscore() {
-        strscore = Integer.toString(score);
-
-        AlertDialog.Builder Showscore = new AlertDialog.Builder(this);
-        Showscore.setTitle("คะแนนที่ได้");
-        Showscore.setMessage("คุณทำได้       " + score + "     คะแนน");
-        Showscore.setPositiveButton("ออกเกมส์", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                Intent nextquest = new Intent(getApplicationContext(), MenuGame.class);
-                startActivity(nextquest);
-            }
-        });
-        Showscore.setNegativeButton("เล่นใหม่", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                Intent nextquest = new Intent(getApplicationContext(), ListPuzzle.class);
-                startActivity(nextquest);
-
-            }
-        });
-        Showscore.show();
-    }*/
+    @Override
+    public boolean dispatchTouchEvent(MotionEvent ev) {
+        return enabled ?
+                super.dispatchTouchEvent(ev) :
+                true;
+    }
 
     private void delay() {
         android.os.Handler myhandler = new android.os.Handler();
@@ -252,7 +232,7 @@ public class PuzzleAnimal10 extends AppCompatActivity {
                 startActivity(nextquest);
 
             }
-        }, 1000);
+        }, 3000);
     }
 
     public void onBackPressed() {

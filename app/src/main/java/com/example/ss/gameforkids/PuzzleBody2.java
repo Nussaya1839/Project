@@ -106,6 +106,7 @@ public class PuzzleBody2 extends AppCompatActivity {
                             float gy = imv2.getY();
                             imA.setX(gx);
                             imA.setY(gy);
+                            enable( false );
                             delay();
                         }
                         if (itemId == R.id.imY) {
@@ -115,6 +116,7 @@ public class PuzzleBody2 extends AppCompatActivity {
                             float gy = imv2.getY();
                             imY.setX(gx);
                             imY.setY(gy);
+                            enable( false );
                             delay();
                         }
                         if ((itemId == R.id.imE)) {
@@ -124,6 +126,7 @@ public class PuzzleBody2 extends AppCompatActivity {
                             float gy = imv2.getY();
                             imE.setX(gx);
                             imE.setY(gy);
+                            enable( false );
                             delay();
                         }
                         if ((itemId == R.id.imI)) {
@@ -133,6 +136,7 @@ public class PuzzleBody2 extends AppCompatActivity {
                             float gy = imv2.getY();
                             imI.setX(gx);
                             imI.setY(gy);
+                            enable( false );
                             delay();
                         }
                         break;
@@ -206,6 +210,17 @@ public class PuzzleBody2 extends AppCompatActivity {
 
     }
 
+    protected boolean enabled = true;
+    public void enable(boolean b) {
+        enabled = b;
+    }
+    @Override
+    public boolean dispatchTouchEvent(MotionEvent ev) {
+        return enabled ?
+                super.dispatchTouchEvent(ev) :
+                true;
+    }
+
     private void delay() {
         android.os.Handler myhandler = new android.os.Handler();
         myhandler.postDelayed(new Runnable() {
@@ -217,7 +232,7 @@ public class PuzzleBody2 extends AppCompatActivity {
                 startActivity(nextquest);
 
             }
-        }, 1000);
+        }, 3000);
     }
 
     public void onBackPressed() {

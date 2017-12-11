@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgg"
+    tools:context="com.example.ss.gameforkids.ListenFamily1">
+
+    <RelativeLayout
+        android:layout_width="322dp"
+        android:layout_height="482dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <ImageView
+            android:id="@+id/imvSpeaker"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            app:srcCompat="@drawable/speaker"/>
+
+        <ImageView
+            android:id="@+id/imvSend"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            app:srcCompat="@drawable/send"/>
+
+        <RadioGroup
+            android:id="@+id/raG"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/imvSpeaker"
+            android:layout_marginEnd="22dp"
+            android:layout_marginRight="22dp">
+
+            <RadioButton
+                android:id="@+id/ra1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ป้า"
+                android:textColor="@android:color/black"
+                android:textSize="22sp"/>
+
+            <RadioButton
+                android:id="@+id/ra2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="แม่"
+                android:textColor="@android:color/black"
+                android:textSize="22sp"/>
+
+            <RadioButton
+                android:id="@+id/ra3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ปู่"
+                android:textColor="@android:color/black"
+                android:textSize="22sp"/>
+
+            <RadioButton
+                android:id="@+id/ra4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ลุง"
+                android:textColor="@android:color/black"
+                android:textSize="22sp"/>
+
+        </RadioGroup>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

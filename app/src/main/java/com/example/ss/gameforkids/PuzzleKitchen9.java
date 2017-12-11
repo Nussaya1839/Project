@@ -104,6 +104,7 @@ public class PuzzleKitchen9 extends AppCompatActivity {
                             float gy = imv2.getY();
                             imN.setX(gx);
                             imN.setY(gy);
+                            enable( false );
                             delay();
                         }
                         if (itemId == R.id.imA) {
@@ -113,6 +114,7 @@ public class PuzzleKitchen9 extends AppCompatActivity {
                             float gy = imv2.getY();
                             imA.setX(gx);
                             imA.setY(gy);
+                            enable( false );
                             delay();
                         }
                         if (itemId == R.id.imP) {
@@ -123,6 +125,7 @@ public class PuzzleKitchen9 extends AppCompatActivity {
                             float gy = imv2.getY();
                             imP.setX(gx);
                             imP.setY(gy);
+                            enable( false );
                             delay();
                         }
                         if ((itemId == R.id.imT)) {
@@ -132,6 +135,7 @@ public class PuzzleKitchen9 extends AppCompatActivity {
                             float gy = imv2.getY();
                             imT.setX(gx);
                             imT.setY(gy);
+                            enable( false );
                             delay();
                         }
                         break;
@@ -205,6 +209,17 @@ public class PuzzleKitchen9 extends AppCompatActivity {
 
     }
 
+    protected boolean enabled = true;
+    public void enable(boolean b) {
+        enabled = b;
+    }
+    @Override
+    public boolean dispatchTouchEvent(MotionEvent ev) {
+        return enabled ?
+                super.dispatchTouchEvent(ev) :
+                true;
+    }
+
     private void delay() {
         android.os.Handler myhandler = new android.os.Handler();
         myhandler.postDelayed(new Runnable() {
@@ -216,7 +231,7 @@ public class PuzzleKitchen9 extends AppCompatActivity {
                 startActivity(nextquest);
 
             }
-        }, 1000);
+        }, 3000);
     }
 
     public void onBackPressed() {

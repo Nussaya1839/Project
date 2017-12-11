@@ -104,6 +104,7 @@ public class PuzzleOrgans6 extends AppCompatActivity {
                             float gy = imv2.getY();
                             imR.setX(gx);
                             imR.setY(gy);
+                            enable( false );
                             delay();
                         }
                         if (itemId == R.id.imE) {
@@ -114,6 +115,7 @@ public class PuzzleOrgans6 extends AppCompatActivity {
                             float gy = imv2.getY();
                             imE.setX(gx);
                             imE.setY(gy);
+                            enable( false );
                             delay();
                         }
                         if (itemId == R.id.imI) {
@@ -123,6 +125,7 @@ public class PuzzleOrgans6 extends AppCompatActivity {
                             float gy = imv2.getY();
                             imI.setX(gx);
                             imI.setY(gy);
+                            enable( false );
                             delay();
                         }
                         if ((itemId == R.id.imC)) {
@@ -132,6 +135,7 @@ public class PuzzleOrgans6 extends AppCompatActivity {
                             float gy = imv2.getY();
                             imC.setX(gx);
                             imC.setY(gy);
+                            enable( false );
                             delay();
                         }
                         break;
@@ -205,6 +209,17 @@ public class PuzzleOrgans6 extends AppCompatActivity {
 
     }
 
+    protected boolean enabled = true;
+    public void enable(boolean b) {
+        enabled = b;
+    }
+    @Override
+    public boolean dispatchTouchEvent(MotionEvent ev) {
+        return enabled ?
+                super.dispatchTouchEvent(ev) :
+                true;
+    }
+
     private void delay() {
         android.os.Handler myhandler = new android.os.Handler();
         myhandler.postDelayed(new Runnable() {
@@ -216,7 +231,7 @@ public class PuzzleOrgans6 extends AppCompatActivity {
                 startActivity(nextquest);
 
             }
-        }, 1000);
+        }, 3000);
     }
 
     public void onBackPressed() {

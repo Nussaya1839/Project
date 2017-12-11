@@ -103,6 +103,7 @@ public class PuzzleAnimal1 extends AppCompatActivity {
                             float gy = imv3.getY();
                             imA.setX(gx);
                             imA.setY(gy);
+                            enable( false );
                             delay();
                         }
                         if (itemId == R.id.imE) {
@@ -112,6 +113,7 @@ public class PuzzleAnimal1 extends AppCompatActivity {
                             float gy = imv3.getY();
                             imE.setX(gx);
                             imE.setY(gy);
+                            enable( false );
                             delay();
                         }  if ((itemId == R.id.imO)) {
                             incorrect.start();
@@ -120,6 +122,7 @@ public class PuzzleAnimal1 extends AppCompatActivity {
                             float gy = imv3.getY();
                             imO.setX(gx);
                             imO.setY(gy);
+                            enable( false );
                             delay();
                         }
                         if ((itemId == R.id.imR)) {
@@ -129,6 +132,7 @@ public class PuzzleAnimal1 extends AppCompatActivity {
                             float gy = imv3.getY();
                             imR.setX(gx);
                             imR.setY(gy);
+                            enable( false );
                             delay();
                         }
                         break;
@@ -202,6 +206,17 @@ public class PuzzleAnimal1 extends AppCompatActivity {
 
     }
 
+    protected boolean enabled = true;
+    public void enable(boolean b) {
+        enabled = b;
+    }
+    @Override
+    public boolean dispatchTouchEvent(MotionEvent ev) {
+        return enabled ?
+                super.dispatchTouchEvent(ev) :
+                true;
+    }
+
     private void delay() {
         android.os.Handler myhandler = new android.os.Handler();
         myhandler.postDelayed(new Runnable() {
@@ -213,7 +228,7 @@ public class PuzzleAnimal1 extends AppCompatActivity {
                 startActivity(nextquest);
 
             }
-        }, 1000);
+        }, 3000);
     }
 
     public void onBackPressed() {

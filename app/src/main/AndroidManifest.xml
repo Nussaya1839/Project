@@ -24,7 +24,6 @@
         <activity android:name=".PuzzleAnimal3"/>
         <activity android:name=".PuzzleAnimal4"/>
         <activity android:name=".PuzzleAnimal5"/>
-        <activity android:name=".PuzzleAnimalFinal"/>
         <activity android:name=".PuzzleAnimal10"/>
         <activity android:name=".PuzzleAnimal6"/>
         <activity android:name=".PuzzleAnimal7"/>
@@ -172,6 +171,16 @@
         <activity android:name=".PuzzleTool10">
         </activity>
         <activity android:name=".ListenGame">
+        </activity>
+        <activity android:name=".ListenFamily1">
+        </activity>
+        <activity android:name=".ListListen">
+        </activity>
+        <activity android:name=".ListenFamily2">
+        </activity>
+        <activity android:name=".ListenFinal">
+        </activity>
+        <activity android:name=".ListenFamily3">
         </activity>
     </application>
 

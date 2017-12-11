@@ -105,6 +105,7 @@ public class PuzzleFood2 extends AppCompatActivity {
                             float gy = imv4.getY();
                             imP.setX(gx);
                             imP.setY(gy);
+                            enable( false );
                             delay();
                         }
                         if (itemId == R.id.imB) {
@@ -114,6 +115,7 @@ public class PuzzleFood2 extends AppCompatActivity {
                             float gy = imv4.getY();
                             imB.setX(gx);
                             imB.setY(gy);
+                            enable( false );
                             delay();
                         }
                         if (itemId == R.id.imT) {
@@ -123,6 +125,7 @@ public class PuzzleFood2 extends AppCompatActivity {
                             float gy = imv4.getY();
                             imT.setX(gx);
                             imT.setY(gy);
+                            enable( false );
                             delay();
                         }
                         if ((itemId == R.id.imK)) {
@@ -132,6 +135,7 @@ public class PuzzleFood2 extends AppCompatActivity {
                             float gy = imv4.getY();
                             imK.setX(gx);
                             imK.setY(gy);
+                            enable( false );
                             delay();
                         }
                         break;
@@ -205,6 +209,17 @@ public class PuzzleFood2 extends AppCompatActivity {
 
     }
 
+    protected boolean enabled = true;
+    public void enable(boolean b) {
+        enabled = b;
+    }
+    @Override
+    public boolean dispatchTouchEvent(MotionEvent ev) {
+        return enabled ?
+                super.dispatchTouchEvent(ev) :
+                true;
+    }
+
     private void delay() {
         android.os.Handler myhandler = new android.os.Handler();
         myhandler.postDelayed(new Runnable() {
@@ -216,7 +231,7 @@ public class PuzzleFood2 extends AppCompatActivity {
                 startActivity(nextquest);
 
             }
-        }, 1000);
+        }, 3000);
     }
 
     public void onBackPressed() {

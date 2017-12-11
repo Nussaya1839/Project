@@ -104,6 +104,7 @@ public class PuzzleFood7 extends AppCompatActivity {
                             float gy = imv1.getY();
                             imY.setX(gx);
                             imY.setY(gy);
+                            enable( false );
                             delay();
                         }
                         if (itemId == R.id.imJ) {
@@ -114,6 +115,7 @@ public class PuzzleFood7 extends AppCompatActivity {
                             float gy = imv1.getY();
                             imJ.setX(gx);
                             imJ.setY(gy);
+                            enable( false );
                             delay();
                         }
                         if (itemId == R.id.imG) {
@@ -123,6 +125,7 @@ public class PuzzleFood7 extends AppCompatActivity {
                             float gy = imv1.getY();
                             imG.setX(gx);
                             imG.setY(gy);
+                            enable( false );
                             delay();
                         }
                         if ((itemId == R.id.imU)) {
@@ -132,6 +135,7 @@ public class PuzzleFood7 extends AppCompatActivity {
                             float gy = imv1.getY();
                             imU.setX(gx);
                             imU.setY(gy);
+                            enable( false );
                             delay();
                         }
                         break;
@@ -204,6 +208,17 @@ public class PuzzleFood7 extends AppCompatActivity {
         });
     }
 
+    protected boolean enabled = true;
+    public void enable(boolean b) {
+        enabled = b;
+    }
+    @Override
+    public boolean dispatchTouchEvent(MotionEvent ev) {
+        return enabled ?
+                super.dispatchTouchEvent(ev) :
+                true;
+    }
+
     private void delay() {
         android.os.Handler myhandler = new android.os.Handler();
         myhandler.postDelayed(new Runnable() {
@@ -215,7 +230,7 @@ public class PuzzleFood7 extends AppCompatActivity {
                 startActivity(nextquest);
 
             }
-        }, 1000);
+        }, 3000);
     }
 
     public void onBackPressed() {

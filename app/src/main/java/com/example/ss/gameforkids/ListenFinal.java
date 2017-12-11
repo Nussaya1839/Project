@@ -1,6 +1,6 @@
 package com.example.ss.gameforkids;
 
-import android.content.Intent;
+import android.content.Intent;;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class PuzzleAnimalFinal extends AppCompatActivity {
+public class ListenFinal extends AppCompatActivity {
     private int score = 0;
     private String strscore, strReceiveScore;
     private TextView tvScore;
@@ -20,7 +20,7 @@ public class PuzzleAnimalFinal extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_puzzle_animal_final);
+        setContentView(R.layout.activity_listen_final);
 
         strReceiveScore = getIntent().getStringExtra("score");
         score = Integer.parseInt(strReceiveScore);
@@ -34,14 +34,14 @@ public class PuzzleAnimalFinal extends AppCompatActivity {
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(PuzzleAnimalFinal.this, ListPuzzle.class);
+                Intent intent = new Intent(ListenFinal.this, ListListen.class);
                 startActivity(intent);
             }
         });
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intents = new Intent(PuzzleAnimalFinal.this, MenuGame.class);
+                Intent intents = new Intent(ListenFinal.this, MenuGame.class);
                 startActivity(intents);
             }
         });

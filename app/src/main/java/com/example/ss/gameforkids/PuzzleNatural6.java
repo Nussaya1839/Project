@@ -104,6 +104,7 @@ public class PuzzleNatural6 extends AppCompatActivity {
                             float gy = imv1.getY();
                             imN.setX(gx);
                             imN.setY(gy);
+                            enable( false );
                             delay();
                         }
                         if (itemId == R.id.imB) {
@@ -113,6 +114,7 @@ public class PuzzleNatural6 extends AppCompatActivity {
                             float gy = imv1.getY();
                             imB.setX(gx);
                             imB.setY(gy);
+                            enable( false );
                             delay();
                         }
                         if (itemId == R.id.imS) {
@@ -122,6 +124,7 @@ public class PuzzleNatural6 extends AppCompatActivity {
                             float gy = imv1.getY();
                             imS.setX(gx);
                             imS.setY(gy);
+                            enable( false );
                             delay();
                         }
                         if ((itemId == R.id.imM)) {
@@ -132,6 +135,7 @@ public class PuzzleNatural6 extends AppCompatActivity {
                             float gy = imv1.getY();
                             imM.setX(gx);
                             imM.setY(gy);
+                            enable( false );
                             delay();
                         }
                         break;
@@ -205,6 +209,17 @@ public class PuzzleNatural6 extends AppCompatActivity {
 
     }
 
+    protected boolean enabled = true;
+    public void enable(boolean b) {
+        enabled = b;
+    }
+    @Override
+    public boolean dispatchTouchEvent(MotionEvent ev) {
+        return enabled ?
+                super.dispatchTouchEvent(ev) :
+                true;
+    }
+
     private void delay() {
         android.os.Handler myhandler = new android.os.Handler();
         myhandler.postDelayed(new Runnable() {
@@ -216,7 +231,7 @@ public class PuzzleNatural6 extends AppCompatActivity {
                 startActivity(nextquest);
 
             }
-        }, 1000);
+        }, 3000);
     }
 
     public void onBackPressed() {

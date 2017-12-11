@@ -104,6 +104,7 @@ public class PuzzleAnimal7 extends AppCompatActivity {
                             float gy = imv2.getY();
                             imA.setX(gx);
                             imA.setY(gy);
+                            enable( false );
                             delay();
 
                         }
@@ -114,6 +115,7 @@ public class PuzzleAnimal7 extends AppCompatActivity {
                             float gy = imv2.getY();
                             imE.setX(gx);
                             imE.setY(gy);
+                            enable( false );
                             delay();
                         }
                         if ((itemId == R.id.imO)) {
@@ -123,6 +125,7 @@ public class PuzzleAnimal7 extends AppCompatActivity {
                             float gy = imv2.getY();
                             imO.setX(gx);
                             imO.setY(gy);
+                            enable( false );
                             delay();
                         }
                         if ((itemId == R.id.imU)) {
@@ -133,6 +136,7 @@ public class PuzzleAnimal7 extends AppCompatActivity {
                             float gy = imv2.getY();
                             imU.setX(gx);
                             imU.setY(gy);
+                            enable( false );
                             delay();
                         }
                         break;
@@ -205,6 +209,17 @@ public class PuzzleAnimal7 extends AppCompatActivity {
 
     }
 
+    protected boolean enabled = true;
+    public void enable(boolean b) {
+        enabled = b;
+    }
+    @Override
+    public boolean dispatchTouchEvent(MotionEvent ev) {
+        return enabled ?
+                super.dispatchTouchEvent(ev) :
+                true;
+    }
+
     private void delay() {
         android.os.Handler myhandler = new android.os.Handler();
         myhandler.postDelayed(new Runnable() {
@@ -216,7 +231,7 @@ public class PuzzleAnimal7 extends AppCompatActivity {
                 startActivity(nextquest);
 
             }
-        }, 1000);
+        }, 3000);
     }
 
     public void onBackPressed() {

@@ -104,6 +104,7 @@ public class PuzzleKitchen7 extends AppCompatActivity {
                             float gy = imv4.getY();
                             imD.setX(gx);
                             imD.setY(gy);
+                            enable( false );
                             delay();
                         }
                         if (itemId == R.id.imP) {
@@ -113,6 +114,7 @@ public class PuzzleKitchen7 extends AppCompatActivity {
                             float gy = imv4.getY();
                             imP.setX(gx);
                             imP.setY(gy);
+                            enable( false );
                             delay();
                         }
                         if (itemId == R.id.imC) {
@@ -122,6 +124,7 @@ public class PuzzleKitchen7 extends AppCompatActivity {
                             float gy = imv4.getY();
                             imC.setX(gx);
                             imC.setY(gy);
+                            enable( false );
                             delay();
                         }
                         if ((itemId == R.id.imS)) {
@@ -132,6 +135,7 @@ public class PuzzleKitchen7 extends AppCompatActivity {
                             float gy = imv4.getY();
                             imS.setX(gx);
                             imS.setY(gy);
+                            enable( false );
                             delay();
                         }
                         break;
@@ -205,6 +209,17 @@ public class PuzzleKitchen7 extends AppCompatActivity {
 
     }
 
+    protected boolean enabled = true;
+    public void enable(boolean b) {
+        enabled = b;
+    }
+    @Override
+    public boolean dispatchTouchEvent(MotionEvent ev) {
+        return enabled ?
+                super.dispatchTouchEvent(ev) :
+                true;
+    }
+
     private void delay() {
         android.os.Handler myhandler = new android.os.Handler();
         myhandler.postDelayed(new Runnable() {
@@ -216,7 +231,7 @@ public class PuzzleKitchen7 extends AppCompatActivity {
                 startActivity(nextquest);
 
             }
-        }, 1000);
+        }, 3000);
     }
 
     public void onBackPressed() {
